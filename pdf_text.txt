@@ -1,0 +1,278 @@
+Sudhakar  Reddy  Peddinti  
+sudhakar.peddinti@walmar.com  |  816-859-4443  |  www.linkedin.com/in/sudhakar-reddy-peddinti  
+ 
+PROFESSIONAL  SUMMARY  
+Results-driven  Staff  Software  Engineer  with  extensive  experience  in  designing  and  implementing  
+scalable,
+ 
+high-performance
+ 
+software
+ 
+solutions.
+ 
+Adept
+ 
+at
+ 
+leading
+ 
+teams,
+ 
+optimizing
+ 
+algorithms,
+ 
+and
+ 
+driving
+ 
+innovation
+ 
+in
+ 
+search
+ 
+technologies.
+ 
+Strong
+ 
+expertise
+ 
+in
+ 
+microservices
+ 
+architecture,
+ 
+machine
+ 
+learning,
+ 
+and
+ 
+Agile
+ 
+development
+ 
+practices.
+ 
+Proven
+ 
+track
+ 
+record
+ 
+of
+ 
+contributing
+ 
+to
+ 
+research
+ 
+in
+ 
+software
+ 
+engineering
+ 
+and
+ 
+artificial
+ 
+intelligence,
+ 
+with
+ 
+multiple
+ 
+paper
+ 
+publications.
+ 
+ 
+WORK  EXPERIENCE  
+Staff  Software  Engineer  |  Walmart,  San  Jose,  CA      2018  -  Present  
+●  Designed  and  implemented  advanced  NLP/ML  algorithms  to  accurately  capture  query  intent,  
+significantly
+ 
+enhancing
+ 
+search
+ 
+result
+ 
+relevance
+ 
+and
+ 
+accuracy.
+ ●  Architected  and  deployed  resilient  query  intent  microservices  ensuring  high  scalability  and  
+low-latency
+ 
+performance
+ 
+across
+ 
+Walmart’s
+ 
+search
+ 
+platform.
+ ●  Led  and  mentored  a  team  of  3  developers  by  enforcing  best  practices  in  code  reviews,  pair  
+programming,
+ 
+and
+ 
+continuous
+ 
+technical
+ 
+coaching.
+ ●  Collaborated  cross-functionally  with  product  managers,  data  scientists,  and  UX  teams  to  
+integrate
+ 
+customer
+ 
+insights
+ 
+and
+ 
+align
+ 
+with
+ 
+business
+ 
+objectives.
+ ●  Applied  agile  methodologies  in  sprint  planning,  daily  stand-ups,  and  retrospectives  to  ensure  
+timely
+ 
+delivery
+ 
+of
+ 
+critical
+ 
+search
+ 
+enhancements.
+ ●  Optimized  system  performance  through  rigorous  performance  monitoring  and  comprehensive  
+root
+ 
+cause
+ 
+analysis
+ 
+to
+ 
+preempt
+ 
+and
+ 
+resolve
+ 
+bottlenecks.
+ ●  Implemented  robust  testing  frameworks  and  CI/CD  pipelines  to  maintain  high  code  quality  and  
+promote
+ 
+seamless
+ 
+integration
+ 
+and
+ 
+deployment.
+ ●  Coordinated  with  DevOps  and  quality  assurance  teams  in  patch  rollouts  and  continuous  system  
+integration,
+ 
+ensuring
+ 
+operational
+ 
+stability.
+ ●  Tools  &  Technologies:  Java,  Spring  Boot,  Microservices,  NLP,  Machine  Learning,  Docker,  
+Kubernetes,
+ 
+Jenkins,
+ 
+Git,
+ 
+Agile
+ 
+Methodologies,
+ 
+SonarQube,
+ 
+REST
+ 
+APIs.
+ 
+Software  Engineer  |  Accenture,  India            January  2013  –  August  2015  
+●  Proposed  and  implemented  data  pruning  techniques  to  reduce  data  querying  time  to  below  35  
+seconds.
+ 
+●  Designed  and  developed  solutions  for  critical  issues  in  customer  applications.  ●  Conducted  problem  management  and  root  cause  analysis  (Awarded  for  best  performance).  ●  Implemented  application  enhancements  in  accordance  with  programming  standards.  ●  Debugged  and  fixed  application  functionalities,  ensuring  high  code  quality  through  unit  testing.  ●  Coordinated  with  testing  teams  and  assisted  system  integration  teams  in  patch  rollout  and  
+continuous
+ 
+integration.
+ ●  Tools  &  Technologies :  Java,  Hibernate,  Spring,  MySQL,  MVC  framework,  Bash  Shell  scripting,  
+Apache
+ 
+Camel,
+ 
+Sonar,
+ 
+Agile
+ 
+Software
+ 
+Development,
+ 
+Jenkins,
+ 
+Maven,
+ 
+SVN,
+ 
+Code
+ 
+Collaborator,
+ 
+JUnit,
+ 
+Mockito,
+ 
+Cobertura,
+ 
+Red
+ 
+Hat
+ 
+Enterprise
+ 
+Linux.
+ 
+Research  Assistant  |  University  of  Missouri  -  Kansas  City    July  2016  –  Present  
+●  Conducted  data  analytics  to  extract  meaningful  insights.  ●  Developed  a  React.js-based  web  application  for  performance-oriented  data  visualization.  ●  Tools  &  Technologies :  AWS  Services  (S3,  Lambda,  API  Gateway),  React,  Redux,  React-Router,  
+Google
+ 
+Charts,
+ 
+Node.js.
+ 
+ 
+OPEN  SOURCE  PROJECTS  
+WMA  -  Node  Websocket  MessagePack  API  Framework      (In  Progress)  
+A  lightweight,  low-bandwidth  HTTP-JSON  replacement  for  APIs.  
+ 
+EDUCATION  
+Master  of  Science  in  Computer  Science  
+University  of  Missouri  -  Kansas  City,  MO,  USA          GPA:  3.73/4  |  Expected  Date:  May  2017  
+Bachelor  of  Engineering  in  Electronics  &  Communications  
+Visvesvaraya  Technological  University,  Belgaum,  India          GPA:  3.15/4  |  Completed:  May  2012  
+ 
+AWARDS  &  RECOGNITION  
+●  Awarded  for  Best  Performance  in  Problem  Management  and  Root  Cause  Analysis  at  Accenture.  ●  Recognized  for  leadership  and  innovation  in  search  technology  at  Walmart.
+ 

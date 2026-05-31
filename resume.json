@@ -1,212 +1,194 @@
 {
 	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
 	"basics": {
-		"name": "Sushruth Sastry",
-		"label": "Senior Software Engineer",
-		"email": "sushruth.sastry@gmail.com",
-		"phone": "5732005345",
-		"url": "https://github.com/sushruth",
-		"summary": "Frontend Platform Engineer with 12+ years of experience building infrastructure that scales engineering organizations. I design monorepo architectures, micro-frontend platforms, and CI/CD systems that enable hundreds of engineers to ship reliably. Track record of modernizing legacy codebases at Microsoft and DocuSign while maintaining production stability.",
+		"name": "Sudhakar Reddy Peddinti",
+		"label": "Staff Software Engineer – Platforms & Search Systems",
+		"email": "sudhakar.peddinti@gmail.com",
+		"phone": "816-859-4443",
+		"url": "https://linkedin.com/in/sudhakar-reddy-peddinti",
+		"summary": "Staff Software Engineer with 8+ years building Java/Spring Boot microservices that power search and product-discovery platforms at a top-3 global retailer. Owned the full lifecycle of 7 production services — from API design and data-layer migration through deployment, observability, and on-call — across 3,200+ commits and 28 repositories. Specialist in polyglot data architectures (PostgreSQL, Cassandra, CosmosDB, ElasticSearch), multi-tenant platform onboarding, and zero-downtime schema migrations. Consistently elevated service ownership from feature delivery to architecture strategy, cross-team contract definition, and platform-wide modernization.",
 		"location": {
-			"address": "13378 188th Ave SE",
-			"postalCode": "98272",
-			"city": "Monroe",
-			"region": "WA",
+			"address": "",
+			"postalCode": "",
+			"city": "Sunnyvale",
+			"region": "CA",
 			"countryCode": "US"
 		},
 		"profiles": [
 			{
 				"network": "LinkedIn",
-				"username": "sushruth-sastry",
-				"url": "https://linkedin.com/in/sushruth-sastry"
+				"username": "sudhakar-reddy-peddinti",
+				"url": "https://linkedin.com/in/sudhakar-reddy-peddinti"
 			},
 			{
 				"network": "GitHub",
-				"username": "sushruth",
-				"url": "https://github.com/sushruth"
+				"username": "srp000w",
+				"url": "https://github.com/srp000w"
 			}
 		]
 	},
 	"work": [
 		{
-			"name": "DocuSign, Inc.",
-			"position": "Senior Software Engineer",
-			"location": "Seattle, WA",
-			"startDate": "2023-03",
+			"name": "Large-Scale Retail E-Commerce Company",
+			"position": "Staff Software Engineer",
+			"location": "Sunnyvale, CA",
+			"startDate": "2023-10",
 			"endDate": "Present",
-			"summary": "Lead features for a frontend platform that serves 440+ engineers internally. Operate at platform scope—designing systems that accelerate delivery for multiple product teams.",
+			"summary": "Lead architectural strategy for a platform of 22+ backend services that control search ranking, faceted navigation, and merchandising rules for 10+ global markets. Own cross-team API contracts, multi-tenant onboarding roadmaps, and org-wide infrastructure modernization.",
 			"highlights": [
-				"Created several feature on the 1DS micro-frontend framework used internally across DocuSign, and open-sourced it as 1FE (github.com/docusign/1fe), enabling configuration-driven frontend composition.",
-				"Designed a monorepo CI/CD architecture on Azure DevOps that enabled atomic multi-package releases, drastically reducing integration failures from uncoordinated deployments.",
-				"Built the Scenes feature—a live, in-place Storybook replacement for micro-frontends across the DocuSign website, enabling API and property mocking. Reduced dev churn during parallel API/UI development and let stakeholders see progress without manual mock setup. Now used by 6 teams.",
-				"Shipped a shared component variant strategy adopted by 16 production applications, eliminating the need for duplicate implementations and enforcing design system consistency.",
-				"Delivered Maestro workflow features and built internal tooling that auto-maps Figma tokens to design system values, reducing manual design-to-code translation errors."
+				"Designed and executed the multi-tenant platform onboarding for the Item-Pinning service: merged divergent US and international Spring Boot codebases into a single deployable, introduced tenant-aware DAO layers with dual-write to both AzureSQL and GCP PostgreSQL for A/B cut-over, provisioned per-tenant Cassandra and distributed-cache clusters, and rolled out 5 tenants across 27 milestones — all with zero downtime.",
+				"Architected the Facet Lifecycle Management backend (Discovery Service + Facet Manager): designed 8 RESTful endpoints covering impact analysis, async deactivation, CSV export to Azure Blob Storage, and automated expiration with a state machine (PUBLISHED → UNPUBLISHED → EXPIRED) preserving blacklist semantics — operating over 82,000 curations and 2,287 facet definitions backed by CosmosDB and ElasticSearch.",
+				"Co-designed a paginated v2 read path for the Facet Sync pipeline (SFCS): defined per-rule branching logic (upsert/skip/delete), a Cassandra TTL contract (864K-second prod / 86.4K-second non-prod), idempotent delete handling, and a phased CCM feature-flag rollout — eliminating ~500 LOC of legacy JOLT transformation code and a class of stale-data tombstone race conditions.",
+				"Spearheaded platform-wide Spring Boot 2→3 migration, CentOS EOL container removal, CCM2 client integration, and Akeyless secrets rotation across 22+ services — closing multiple CVEs, removing all hardcoded credentials, and standardizing P0 service health-check patterns for Kubernetes readiness/liveness probes.",
+				"Built a Python-based AI diagnostic tool (Sherlock) for automated search-quality investigation: integrated with internal Sunlight debug UI, search-cache metadata APIs, and Polaris runtime data — authored the definitive service-interaction map between 10+ platform and runtime services, adopted as the standard onboarding reference."
 			]
 		},
 		{
-			"name": "Microsoft Corporation",
-			"position": "Software Development Engineer II",
-			"location": "Bellevue, WA",
-			"startDate": "2019-11",
-			"endDate": "2023-02",
-			"summary": "Frontend lead on a Teams product integrating into Admin Center. Drove Module Federation adoption, build modernization, and developer experience improvements for the project.",
+			"name": "Large-Scale Retail E-Commerce Company",
+			"position": "Senior Software Engineer",
+			"location": "Sunnyvale, CA",
+			"startDate": "2020-01",
+			"endDate": "2023-10",
+			"summary": "Took full technical ownership of the core rules-management backend (1,261 commits, 81K+ lines) and expanded scope to system design, data-model migrations, and experimentation infrastructure across 12 active repositories.",
 			"highlights": [
-				"Pioneered the setup of Webpack 5 Module Federation in Teams Admin Center, enabling independent feature deployment and cutting local dev loop time from minutes to under 60 seconds.",
-				"Migrated build infrastructure to Webpack 5 and Yarn PnP across several projects with a coworker, reducing build times and eliminating intermittent CI failures caused by dependency resolution overloading the Node.js package proxy.",
-				"Built and maintained the graph-js library for MS Graph API consumption—fully type-safe with automatic typing from OData schemas. Adopted as the standard across all teams in the broader organization.",
-				"Owned the Visits analytics dashboard frontend, delivering healthcare usage metrics for organizations using Epic EHR integration with Teams.",
-				"Maintained 6 shared packages in a JS tooling monorepo (graph-js, graph-based user picker, etc.), all with strict TypeScript typing."
+				"Designed and shipped the V2 rules engine — replaced a multi-table legacy schema with a single-table versioned model keyed on <query, target_section>, implemented Spring-managed migration jobs to convert 58K+ rules from v1→v2 format, and led a 4-phase production rollout with per-phase CCM switches and automated regression gates.",
+				"Built the Affinity Override Service end-to-end (299 commits): Spring Boot REST API with Azure Blob Storage integration for bulk carousel data, generics-based DAO to reduce duplicate data-access code (identified via SonarQube), performance load testing, and Phase-2 enhancements including stale-category fix and stage-based routing logic.",
+				"Engineered interleaving experiment infrastructure for A/B testing search-ranking rules: added an interleaving field to the shared Cosmo DB Util library, wired Perceive/Guide runtime feature flags via Polaris USGM config, built email notification for expired and zero-result rules via Concord scheduled jobs, and implemented rule-explosion control to cap combinatorial growth.",
+				"Executed the Guru PostgreSQL migration (AzureSQL → GCP Cloud SQL): authored the full migration playbook, refactored tenant-specific Couchbase connection logic, added a 3rd WCNP cache cluster for HA, upgraded to Spring Boot 2.7, and removed legacy SBMS integration and hardcoded secrets — drove the same upgrade pattern across Hulu and Item-Pinning services.",
+				"Built the Category Intervention Dashboard (CSID) as a standalone Spring Boot service: separated it from the Guru monolith, implemented category-impact APIs, batch-update endpoints, CSV data-export, and daily-trends Concord jobs — the tool became the primary operator interface for 100+ internal specialists.",
+				"Coordinated emergency Log4Shell (CVE-2021-44228) remediation across 4 Java services within 48 hours — upgraded log4j-core to 2.17.0, resolved transitive dependency conflicts in Maven BOM hierarchies, and verified fix across all deployment environments."
 			]
 		},
 		{
-			"name": "Microsoft Corporation",
-			"position": "Software Development Engineer I",
-			"location": "Bellevue, WA",
-			"startDate": "2018-09",
-			"endDate": "2019-11",
+			"name": "Large-Scale Retail E-Commerce Company",
+			"position": "Software Engineer III",
+			"location": "Sunnyvale, CA",
+			"startDate": "2018-01",
+			"endDate": "2020-01",
+			"summary": "Joined the Search Platform team and contributed 175+ commits in year one across 4 repositories — building core backend services for search-curation and item-ranking tooling from the ground up.",
 			"highlights": [
-				"Designed the Setup Wizard framework for Teams Admin Center—became the standard onboarding pattern adopted by subsequent features.",
-				"Shipped the Epic–Teams healthcare integration frontend, enabling clinical staff to launch Teams meetings directly from Epic EHR workflows.",
-				"Built the team's first shared libraries: an OData-to-TypeScript generator and typed MS Graph wrappers that automated API contract maintenance."
+				"Developed the Item-Pinning Service from early-stage (582 total commits over tenure): implemented normalized-query API integration with the ranking runtime, resolved Couchbase connection pooling bottlenecks (NullPointerException in empty-string handling, CB dependency exclusions), and delivered OG tenant configuration — establishing the service that would scale to support 5 global tenants.",
+				"Built the Manual Shelves Syncer service from scratch: designed Spring Boot REST APIs for audit logging, page-count queries, and delta-sync capabilities; authored the PagerDuty alerting runbook and operational playbook still in active use; service handles full and incremental shelf-data synchronization for merchandising categories.",
+				"Implemented Concord CI/CD pipeline automation for 6+ scheduled platform jobs — data priming, rule expiration notifications, and reporting triggers — establishing YAML-based configuration patterns and Concord library versioning practices adopted across the team's entire service portfolio.",
+				"Contributed foundational Guru API development (Orion/OOS exception management endpoints, Couchbase-backed data models, Splunk log routing with switch-based logic) and created the OCRA troubleshooting guide used during on-call rotations.",
+				"Initiated CSID module separation from the Guru monolith: added product-type column support, built the database schema for category-specialist interventions, and laid the architectural groundwork for its later extraction into a standalone service."
 			]
 		},
 		{
-			"name": "CVS Health",
-			"position": "UI Developer (Contract)",
-			"location": "Florham Park, NJ",
-			"startDate": "2016-08",
-			"endDate": "2018-07",
-			"highlights": [
-				"Led the AngularJS-to-Angular 2+ migration for the CareGiver platform, delivering a maintainable architecture that supported continued feature development.",
-				"Built a RequireJS dependency generator that automated configuration and eliminated a class of manual integration errors."
-			]
-		},
-		{
-			"name": "Heartland Payment Systems",
-			"position": "Full Stack Developer (Contract)",
-			"location": "Plano, TX",
-			"startDate": "2015-11",
-			"endDate": "2016-06",
-			"highlights": [
-				"Evaluated mobile architectures (React Native vs Angular hybrid), delivering prototypes that informed the team's technology decision.",
-				"Modernized backend from PHP 5 to PHP 7, improving runtime performance and closing security vulnerabilities."
-			]
-		},
-		{
-			"name": "Missouri S&T",
-			"position": "Graduate Teaching Assistant",
-			"location": "Rolla, MO",
-			"startDate": "2014-01",
-			"endDate": "2015-05",
-			"highlights": [
-				"Taught labs and graded coursework for Digital Signal Processing and Analog Signals courses."
-			]
-		},
-		{
-			"name": "Cachy Graphics / GXS",
-			"position": "Founder & Lead Developer",
-			"location": "Bangalore, India",
-			"startDate": "2013-07",
-			"endDate": "2014-04",
-			"highlights": [
-				"Founded a services startup; delivered a Cordova-based warehouse distribution system for Nestlé."
-			]
-		},
-		{
-			"name": "EzSwype Business Solutions",
+			"name": "Accenture",
 			"position": "Software Engineer",
 			"location": "Bangalore, India",
-			"startDate": "2012-09",
-			"endDate": "2013-06",
+			"startDate": "2013-01",
+			"endDate": "2015-08",
 			"highlights": [
-				"Built the initial frontend architecture and build tooling for the company's payment platform."
+				"Proposed and implemented database query pruning techniques that reduced data query execution times to under 35 seconds.",
+				"Designed and developed application enhancements and bug fixes for high-impact customer applications using Java, Hibernate, and Spring MVC.",
+				"Conducted rigorous problem management and root cause analysis, receiving the Best Performance award for resolving critical production issues.",
+				"Built and managed CI/CD automation pipelines using Jenkins, Maven, and SVN to support stable patch rollouts."
+			]
+		},
+		{
+			"name": "University of Missouri - Kansas City",
+			"position": "Graduate Research Assistant",
+			"location": "Kansas City, MO",
+			"startDate": "2016-07",
+			"endDate": "2017-05",
+			"highlights": [
+				"Conducted data analytics and statistical processing to extract meaningful research insights.",
+				"Developed a React.js and Redux-based web dashboard for high-performance interactive data visualization utilizing Google Charts.",
+				"Leveraged AWS Services (S3, Lambda, API Gateway) and Node.js to design serverless backend APIs."
 			]
 		}
 	],
 	"education": [
 		{
-			"institution": "Missouri University of Science and Technology",
-			"area": "Electrical and Computer Engineering",
+			"institution": "University of Missouri - Kansas City",
+			"area": "Computer Science",
 			"studyType": "M.S.",
-			"startDate": "2013",
-			"endDate": "2015"
+			"startDate": "2015",
+			"endDate": "2017",
+			"gpa": "3.73"
 		},
 		{
 			"institution": "Visvesvaraya Technological University",
-			"area": "Electronics and Communications",
+			"area": "Electronics & Communications Engineering",
 			"studyType": "B.E.",
 			"startDate": "2008",
-			"endDate": "2012"
+			"endDate": "2012",
+			"gpa": "3.15"
 		}
 	],
 	"skills": [
 		{
-			"name": "Architecture & Platform Engineering",
+			"name": "Java & Backend Engineering",
 			"keywords": [
-				"Micro-Frontend Architecture (Module Federation)",
-				"Monorepo Strategy & Distributed Builds (Nx, Remote Caching)",
-				"CI/CD System Design & Governance (Azure DevOps)",
-				"Frontend Platform Standardization",
-				"Design System Architecture & Versioning"
+				"Java 8 / 11 / 17 / 21",
+				"Spring Boot 2.x → 3.x (MVC, WebFlux, Data JPA)",
+				"Maven (multi-module, BOM management)",
+				"REST API Design & Contract-First Development",
+				"TestNG / JUnit / PowerMock / SonarQube",
+				"Python (AI/ML tooling, data scripts)"
 			]
 		},
 		{
-			"name": "Frontend Engineering",
+			"name": "Datastores & Caching",
 			"keywords": [
-				"TypeScript System Design (Strict Typing, Generics, Conditional Types)",
-				"React (Hooks, Context, Suspense, Error Boundaries)",
-				"State Management (Redux Toolkit, MobX, Zustand)",
-				"Web Performance Engineering (Core Web Vitals, Bundle Analysis)",
-				"Package Management (Yarn Berry / PnP, npm workspaces)"
+				"PostgreSQL (GCP Cloud SQL, AzureSQL)",
+				"Apache Cassandra (TTL-based expiry, distributed cache)",
+				"Azure CosmosDB (MongoDB 4.2 API)",
+				"ElasticSearch (indexing, aggregation, reindex)",
+				"Couchbase / MeghaCache (connection pooling, bucket mgmt)",
+				"Azure Blob Storage (async file export)"
 			]
 		},
 		{
-			"name": "Backend & Integration",
+			"name": "Platform & Systems Design",
 			"keywords": [
-				"Backend-for-Frontend (BFF) Patterns",
-				"API Contract Design (REST, OData, type generation and automation, Swagger)",
-				"C# / .NET Service Integration",
-				"Azure (Front Door, CDN, Key Vault, Functions, DevOps, App Service, Cert automation, Networking)"
+				"Multi-Tenant Architecture (10+ markets)",
+				"Dual-Write / Dark Rollout Migration Patterns",
+				"Feature Flag Management (CCM/CCM2)",
+				"Event-Driven Pipelines (Kafka, scheduled CronJobs)",
+				"State Machine Design (lifecycle management)",
+				"A/B Testing & Interleaving Experiment Infrastructure"
 			]
 		},
 		{
-			"name": "Modernization & Developer Experience",
+			"name": "DevOps & Infrastructure",
 			"keywords": [
-				"Developer Experience (DX) Platform Engineering",
-				"Legacy Frontend Modernization (AngularJS to React)",
-				"Accessibility Engineering (WCAG 2.1)",
-				"Automated Dependency Management (Renovate, Dependabot)"
+				"Kubernetes (WCNP / K8s, readiness/liveness probes)",
+				"Concord Pipeline Orchestration (CI/CD)",
+				"GitOps Deployment (Kitt, auto-CRQ)",
+				"Vault / Akeyless (Secrets Management)",
+				"Service Mesh / Istio",
+				"Jenkins / GitHub Actions / Looper CI"
+			]
+		},
+		{
+			"name": "Observability & Reliability",
+			"keywords": [
+				"Grafana / Prometheus (custom MMS dashboards)",
+				"Open Observe (structured log dashboards)",
+				"PagerDuty (alert design, runbook authoring)",
+				"CVE Remediation (Log4Shell, Postgres libs, CentOS EOL)",
+				"Regression Automation (TestNG suites, Looper-triggered)"
 			]
 		}
 	],
-	"publications": [
-		{
-			"name": "A Modular Scheme to Detect and Combat Sinusoidal Variation in Fading Channels",
-			"publisher": "International Telemetering Conference",
-			"releaseDate": "2015",
-			"url": "https://scholarsmine.mst.edu/ele_comeng_facwork/index.50.html"
-		},
-		{
-			"name": "\"i\" — A novel algorithm for optical character recognition (OCR)",
-			"publisher": "IEEE International Multi-Conference (iMac4s)",
-			"releaseDate": "2013",
-			"url": "https://ieeexplore.ieee.org/document/6526442/"
-		}
-	],
+	"publications": [],
 	"key_differentiators": {
-		"summary": "Why hire me as a Principal/Lead Engineer",
+		"summary": "Why hire me as a Staff Platform Engineer",
 		"points": [
 			{
-				"header": "Force Multiplier",
-				"detail": "I build infrastructure that makes entire teams faster. At DocuSign, I lead features for a platform serving 440+ engineers. I operate at organizational scope, not just individual contribution."
+				"header": "Deep Java Backend Ownership",
+				"detail": "I have 3,200+ commits across 28 repositories over 8 years — not as a contributor, but as the primary owner. I have built 4 services from scratch, migrated 3 data layers (Couchbase→Cassandra, AzureSQL→PostgreSQL, legacy→CosmosDB), and maintained production SLAs throughout. I understand Java/Spring Boot at the level of Maven BOM conflicts, ThreadLocal connection-pool tuning, and log4j transitive dependency resolution."
 			},
 			{
-				"header": "Safe Modernization",
-				"detail": "I turn risky legacy migrations into incremental, low-risk transitions. Micro-frontends and Module Federation let me modernize systems while keeping production stable and feature work unblocked."
+				"header": "Zero-Downtime at Scale",
+				"detail": "Every migration I have delivered — Presto v1→v2 (58K rules), Couchbase→MeghaCache+Cassandra, AzureSQL→GCP PostgreSQL, 5-tenant WCP onboarding — used dual-write DAOs, CCM feature flags, and phased rollouts to guarantee zero downtime. I treat safe migration as a first-class engineering discipline, not an afterthought."
 			},
 			{
-				"header": "ROI-Driven Decisions",
-				"detail": "Architecture choices should pay off. Faster builds, shorter dev loops, fewer integration failures—I measure success by whether engineers ship faster and ops costs go down."
+				"header": "Platform Breadth, Not Just Depth",
+				"detail": "Beyond my owned services, I contribute to the shared library (cosmo-db-util), CI/CD pipeline configs (161 Concord commits), regression automation (59 commits), Grafana/Prometheus dashboards (28 commits), and runtime feature-flag configurations. I operate as a platform engineer across the full stack — from API contract to Kubernetes probe tuning to Kafka consumer-lag alerting."
 			}
 		]
 	}
