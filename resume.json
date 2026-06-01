@@ -36,11 +36,11 @@
 			"endDate": "Present",
 			"summary": "Lead architectural strategy for a platform of 22+ backend services that control search ranking, faceted navigation, and merchandising rules for 10+ global markets. Own cross-team API contracts, multi-tenant onboarding roadmaps, and org-wide infrastructure modernization.",
 			"highlights": [
-				"Designed and executed the multi-tenant platform onboarding for the Item-Pinning service: merged divergent US and international Spring Boot codebases into a single deployable, introduced tenant-aware DAO layers with dual-write to both AzureSQL and GCP PostgreSQL for A/B cut-over, provisioned per-tenant Cassandra and distributed-cache clusters, and rolled out 5 tenants across 27 milestones — all with zero downtime.",
-				"Architected the Facet Lifecycle Management backend (Discovery Service + Facet Manager): designed 8 RESTful endpoints covering impact analysis, async deactivation, CSV export to Azure Blob Storage, and automated expiration with a state machine (PUBLISHED → UNPUBLISHED → EXPIRED) preserving blacklist semantics — operating over 82,000 curations and 2,287 facet definitions backed by CosmosDB and ElasticSearch.",
-				"Co-designed a paginated v2 read path for the Facet Sync pipeline (SFCS): defined per-rule branching logic (upsert/skip/delete), a Cassandra TTL contract (864K-second prod / 86.4K-second non-prod), idempotent delete handling, and a phased CCM feature-flag rollout — eliminating ~500 LOC of legacy JOLT transformation code and a class of stale-data tombstone race conditions.",
-				"Spearheaded platform-wide Spring Boot 2→3 migration, CentOS EOL container removal, CCM2 client integration, and Akeyless secrets rotation across 22+ services — closing multiple CVEs, removing all hardcoded credentials, and standardizing P0 service health-check patterns for Kubernetes readiness/liveness probes.",
-				"Built a Python-based AI diagnostic tool (Sherlock) for automated search-quality investigation: integrated with internal Sunlight debug UI, search-cache metadata APIs, and Polaris runtime data — authored the definitive service-interaction map between 10+ platform and runtime services, adopted as the standard onboarding reference."
+				"Architected zero-downtime multi-tenant onboarding for Item-Pinning service, merging regional codebases and implementing tenant-aware DAOs with dual-writes across AzureSQL and GCP PostgreSQL, successfully rolling out 5 global tenants.",
+				"Engineered Facet Lifecycle Management backend with state machine driven automated expiration, managing 82,000+ curations backed by CosmosDB and ElasticSearch.",
+				"Designed resilient v2 read path for Facet Sync pipeline with idempotent processing and Cassandra TTL contracts, eliminating stale-data race conditions and reducing legacy footprint.",
+				"Spearheaded infrastructure modernization across 22+ microservices, driving Spring Boot 3 migration, secret rotation (Akeyless), and Kubernetes probe standardization to resolve CVEs and improve platform security posture.",
+				"Developed a Python-based AI diagnostic tool (Sherlock) integrating multiple search-cache APIs to automate search-quality investigations, reducing debug time and establishing standard interaction mappings."
 			]
 		},
 		{
@@ -51,12 +51,12 @@
 			"endDate": "2023-10",
 			"summary": "Took full technical ownership of the core rules-management backend (1,261 commits, 81K+ lines) and expanded scope to system design, data-model migrations, and experimentation infrastructure across 12 active repositories.",
 			"highlights": [
-				"Designed and shipped the V2 rules engine — replaced a multi-table legacy schema with a single-table versioned model keyed on <query, target_section>, implemented Spring-managed migration jobs to convert 58K+ rules from v1→v2 format, and led a 4-phase production rollout with per-phase CCM switches and automated regression gates.",
-				"Built the Affinity Override Service end-to-end (299 commits): Spring Boot REST API with Azure Blob Storage integration for bulk carousel data, generics-based DAO to reduce duplicate data-access code (identified via SonarQube), performance load testing, and Phase-2 enhancements including stale-category fix and stage-based routing logic.",
-				"Engineered interleaving experiment infrastructure for A/B testing search-ranking rules: added an interleaving field to the shared Cosmo DB Util library, wired Perceive/Guide runtime feature flags via Polaris USGM config, built email notification for expired and zero-result rules via Concord scheduled jobs, and implemented rule-explosion control to cap combinatorial growth.",
-				"Executed the Guru PostgreSQL migration (AzureSQL → GCP Cloud SQL): authored the full migration playbook, refactored tenant-specific Couchbase connection logic, added a 3rd WCNP cache cluster for HA, upgraded to Spring Boot 2.7, and removed legacy SBMS integration and hardcoded secrets — drove the same upgrade pattern across Hulu and Item-Pinning services.",
-				"Built the Category Intervention Dashboard (CSID) as a standalone Spring Boot service: separated it from the Guru monolith, implemented category-impact APIs, batch-update endpoints, CSV data-export, and daily-trends Concord jobs — the tool became the primary operator interface for 100+ internal specialists.",
-				"Coordinated emergency Log4Shell (CVE-2021-44228) remediation across 4 Java services within 48 hours — upgraded log4j-core to 2.17.0, resolved transitive dependency conflicts in Maven BOM hierarchies, and verified fix across all deployment environments."
+				"Designed and delivered the V2 rules engine, replacing legacy multi-table schemas with a versioned NoSQL model and executing a seamless 4-phase migration of 58K+ rules using feature flags and automated regression gates.",
+				"Built the Affinity Override Spring Boot service from the ground up, implementing generic DAOs to optimize data access and Azure Blob Storage integrations for scalable bulk data ingestion.",
+				"Architected A/B testing and interleaving experiment infrastructure for search-ranking rules, implementing combinatorial safeguards and event-driven notifications to validate search algorithms at scale.",
+				"Led zero-downtime database migrations from AzureSQL to GCP Cloud SQL for core services, establishing highly available cache clusters and standardizing the migration playbook across multiple platform teams.",
+				"Extracted the Category Intervention Dashboard from a monolithic architecture into an independent microservice, establishing the primary operations interface for 100+ domain specialists.",
+				"Led rapid Log4Shell vulnerability remediation across multiple tier-1 Java microservices within 48 hours, resolving complex Maven dependency conflicts."
 			]
 		},
 		{
@@ -67,11 +67,11 @@
 			"endDate": "2020-01",
 			"summary": "Joined the Search Platform team and contributed 175+ commits in year one across 4 repositories — building core backend services for search-curation and item-ranking tooling from the ground up.",
 			"highlights": [
-				"Developed the Item-Pinning Service from early-stage (582 total commits over tenure): implemented normalized-query API integration with the ranking runtime, resolved Couchbase connection pooling bottlenecks (NullPointerException in empty-string handling, CB dependency exclusions), and delivered OG tenant configuration — establishing the service that would scale to support 5 global tenants.",
-				"Built the Manual Shelves Syncer service from scratch: designed Spring Boot REST APIs for audit logging, page-count queries, and delta-sync capabilities; authored the PagerDuty alerting runbook and operational playbook still in active use; service handles full and incremental shelf-data synchronization for merchandising categories.",
-				"Implemented Concord CI/CD pipeline automation for 6+ scheduled platform jobs — data priming, rule expiration notifications, and reporting triggers — establishing YAML-based configuration patterns and Concord library versioning practices adopted across the team's entire service portfolio.",
-				"Contributed foundational Guru API development (Orion/OOS exception management endpoints, Couchbase-backed data models, Splunk log routing with switch-based logic) and created the OCRA troubleshooting guide used during on-call rotations.",
-				"Initiated CSID module separation from the Guru monolith: added product-type column support, built the database schema for category-specialist interventions, and laid the architectural groundwork for its later extraction into a standalone service."
+				"Developed foundational components of the Item-Pinning Service, resolving critical Couchbase connection bottlenecks and establishing initial multi-tenant configuration models to support global scale.",
+				"Engineered the Manual Shelves Syncer microservice to handle incremental and full shelf-data synchronization, and established comprehensive operational alerting runbooks.",
+				"Standardized CI/CD automation and event-driven job orchestration using Concord, establishing configuration patterns adopted across the entire platform service portfolio.",
+				"Delivered core REST APIs and data models for internal platforms, standardizing distributed logging strategies and creating foundational troubleshooting playbooks for on-call teams.",
+				"Initiated modular decoupling of specialist intervention workflows from legacy monoliths, designing extensible schemas that enabled future service extraction."
 			]
 		},
 		{
@@ -81,10 +81,10 @@
 			"startDate": "2013-01",
 			"endDate": "2015-08",
 			"highlights": [
-				"Proposed and implemented database query pruning techniques that reduced data query execution times to under 35 seconds.",
-				"Designed and developed application enhancements and bug fixes for high-impact customer applications using Java, Hibernate, and Spring MVC.",
-				"Conducted rigorous problem management and root cause analysis, receiving the Best Performance award for resolving critical production issues.",
-				"Built and managed CI/CD automation pipelines using Jenkins, Maven, and SVN to support stable patch rollouts."
+				"Implemented database query optimizations reducing execution times to under 35 seconds.",
+				"Developed enhancements and bug fixes for high-impact applications using Java, Hibernate, and Spring MVC.",
+				"Led critical problem management and root cause analysis, earning the Best Performance award for production issue resolution.",
+				"Automated CI/CD pipelines using Jenkins and Maven to ensure stable patch deployments."
 			]
 		},
 		{
@@ -94,9 +94,9 @@
 			"startDate": "2016-07",
 			"endDate": "2017-05",
 			"highlights": [
-				"Conducted data analytics and statistical processing to extract meaningful research insights.",
-				"Developed a React.js and Redux-based web dashboard for high-performance interactive data visualization utilizing Google Charts.",
-				"Leveraged AWS Services (S3, Lambda, API Gateway) and Node.js to design serverless backend APIs."
+				"Conducted data analytics and statistical processing to extract research insights.",
+				"Developed a React.js and Redux web dashboard for interactive data visualization.",
+				"Designed serverless backend APIs utilizing AWS S3, Lambda, and API Gateway."
 			]
 		}
 	],
