@@ -2,14 +2,14 @@
 	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
 	"basics": {
 		"name": "Sudhakar Reddy Peddinti",
-		"label": "Staff Software Engineer – Platforms & Search Systems",
-		"email": "sudhakar.peddinti@gmail.com",
+		"label": "Staff Software Engineer | Platforms & Search Systems",
+		"email": "p.reddy.sudhakar@gmail.com",
 		"phone": "816-859-4443",
 		"url": "https://linkedin.com/in/sudhakar-reddy-peddinti",
-		"summary": "Staff Software Engineer with 8+ years building Java/Spring Boot microservices that power search and product-discovery platforms at a top-3 global retailer. Owned the full lifecycle of 7 production services — from API design and data-layer migration through deployment, observability, and on-call — across 3,200+ commits and 28 repositories. Specialist in polyglot data architectures (PostgreSQL, Cassandra, CosmosDB, ElasticSearch), multi-tenant platform onboarding, and zero-downtime schema migrations. Consistently elevated service ownership from feature delivery to architecture strategy, cross-team contract definition, and platform-wide modernization.",
+		"summary": "Staff Software Engineer with 10+ years building Java/Spring Boot microservices that power search and product-discovery platforms at a top-3 global retailer. Owned the full lifecycle of 7 production services — from API design and data-layer migration through deployment, observability, and on-call — across 3,200+ commits and 28 repositories. Specialist in polyglot data architectures (PostgreSQL, Cassandra, CosmosDB, ElasticSearch), multi-tenant platform onboarding, and zero-downtime schema migrations. Consistently elevated service ownership from feature delivery to architecture strategy, cross-team contract definition, and platform-wide modernization.",
 		"location": {
 			"address": "",
-			"postalCode": "",
+			"postalCode": "95126",
 			"city": "Sunnyvale",
 			"region": "CA",
 			"countryCode": "US"
@@ -29,7 +29,7 @@
 	},
 	"work": [
 		{
-			"name": "Large-Scale Retail E-Commerce Company",
+			"name": "Walmart",
 			"position": "Staff Software Engineer",
 			"location": "Sunnyvale, CA",
 			"startDate": "2023-10",
@@ -44,7 +44,7 @@
 			]
 		},
 		{
-			"name": "Large-Scale Retail E-Commerce Company",
+			"name": "Walmart",
 			"position": "Senior Software Engineer",
 			"location": "Sunnyvale, CA",
 			"startDate": "2020-01",
@@ -60,7 +60,7 @@
 			]
 		},
 		{
-			"name": "Large-Scale Retail E-Commerce Company",
+			"name": "Walmart",
 			"position": "Software Engineer III",
 			"location": "Sunnyvale, CA",
 			"startDate": "2018-01",
