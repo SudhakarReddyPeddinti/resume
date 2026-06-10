@@ -6,7 +6,7 @@
 		"email": "p.reddy.sudhakar@gmail.com",
 		"phone": "816-859-4443",
 		"url": "https://linkedin.com/in/sudhakar-reddy-peddinti",
-		"summary": "Staff Software Engineer with 10+ years building Java/Spring Boot microservices that power search and product-discovery platforms at a top-3 global retailer. Owned the full lifecycle of 7 production services — from API design and data-layer migration through deployment, observability, and on-call — across 3,200+ commits and 28 repositories. Specialist in polyglot data architectures (PostgreSQL, Cassandra, CosmosDB, ElasticSearch), multi-tenant platform onboarding, and zero-downtime schema migrations. Consistently elevated service ownership from feature delivery to architecture strategy, cross-team contract definition, and platform-wide modernization.",
+		"summary": "Staff Software Engineer with 10+ years building Java/Spring Boot microservices that power search and product-discovery platforms at a top-3 global retailer. Owned the full lifecycle of 7 production services — from API design and data-layer migration through deployment, observability, and on-call — across 28 repositories. Specialist in polyglot data architectures (PostgreSQL, Cassandra, CosmosDB, ElasticSearch), multi-tenant platform onboarding, and zero-downtime schema migrations. Consistently elevated service ownership from feature delivery to architecture strategy, cross-team contract definition, and platform-wide modernization.",
 		"location": {
 			"address": "",
 			"postalCode": "95126",
@@ -49,7 +49,7 @@
 			"location": "Sunnyvale, CA",
 			"startDate": "2020-01",
 			"endDate": "2023-10",
-			"summary": "Took full technical ownership of the core rules-management backend (1,261 commits, 81K+ lines) and expanded scope to system design, data-model migrations, and experimentation infrastructure across 12 active repositories.",
+			"summary": "Took full technical ownership of the core rules-management backend (81K+ lines) and expanded scope to system design, data-model migrations, and experimentation infrastructure across 12 active repositories.",
 			"highlights": [
 				"Designed and delivered the V2 rules engine, replacing legacy multi-table schemas with a versioned NoSQL model and executing a seamless 4-phase migration of 58K+ rules using feature flags and automated regression gates.",
 				"Built the Affinity Override Spring Boot service from the ground up, implementing generic DAOs to optimize data access and Azure Blob Storage integrations for scalable bulk data ingestion.",
@@ -65,7 +65,7 @@
 			"location": "Sunnyvale, CA",
 			"startDate": "2018-01",
 			"endDate": "2020-01",
-			"summary": "Joined the Search Platform team and contributed 175+ commits in year one across 4 repositories — building core backend services for search-curation and item-ranking tooling from the ground up.",
+			"summary": "Joined the Search Platform team and contributed across 4 repositories in year one — building core backend services for search-curation and item-ranking tooling from the ground up.",
 			"highlights": [
 				"Developed foundational components of the Item-Pinning Service, resolving critical Couchbase connection bottlenecks and establishing initial multi-tenant configuration models to support global scale.",
 				"Engineered the Manual Shelves Syncer microservice to handle incremental and full shelf-data synchronization, and established comprehensive operational alerting runbooks.",
@@ -180,7 +180,7 @@
 		"points": [
 			{
 				"header": "Deep Java Backend Ownership",
-				"detail": "I have 3,200+ commits across 28 repositories over 8 years — not as a contributor, but as the primary owner. I have built 4 services from scratch, migrated 3 data layers (Couchbase→Cassandra, AzureSQL→PostgreSQL, legacy→CosmosDB), and maintained production SLAs throughout. I understand Java/Spring Boot at the level of Maven BOM conflicts, ThreadLocal connection-pool tuning, and log4j transitive dependency resolution."
+				"detail": "I have managed 28 repositories over 8 years — not as a contributor, but as the primary owner. I have built 4 services from scratch, migrated 3 data layers (Couchbase→Cassandra, AzureSQL→PostgreSQL, legacy→CosmosDB), and maintained production SLAs throughout. I understand Java/Spring Boot at the level of Maven BOM conflicts, ThreadLocal connection-pool tuning, and log4j transitive dependency resolution."
 			},
 			{
 				"header": "Zero-Downtime at Scale",
@@ -188,7 +188,7 @@
 			},
 			{
 				"header": "Platform Breadth, Not Just Depth",
-				"detail": "Beyond my owned services, I contribute to the shared library (cosmo-db-util), CI/CD pipeline configs (161 Concord commits), regression automation (59 commits), Grafana/Prometheus dashboards (28 commits), and runtime feature-flag configurations. I operate as a platform engineer across the full stack — from API contract to Kubernetes probe tuning to Kafka consumer-lag alerting."
+				"detail": "Beyond my owned services, I contribute to the shared library (cosmo-db-util), CI/CD pipeline configs, regression automation, Grafana/Prometheus dashboards, and runtime feature-flag configurations. I operate as a platform engineer across the full stack — from API contract to Kubernetes probe tuning to Kafka consumer-lag alerting."
 			}
 		]
 	}
